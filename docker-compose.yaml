@@ -1,0 +1,20 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: challenge-product-service-db
+    # env_file:
+    #   - .env
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb-data:/data/db
+    networks:
+      - app_challenge_product_service_network
+
+networks:
+  app_challenge_product_service_network:
+
+volumes:
+  mongodb-data:
