@@ -4,8 +4,6 @@ services:
     image: mongo
     restart: always
     container_name: challenge-product-service-db
-    # env_file:
-    #   - .env
     ports:
       - 27017:27017
     volumes:
