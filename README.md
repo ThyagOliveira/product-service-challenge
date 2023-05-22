@@ -43,6 +43,14 @@ $ npm run start:dev
 http://localhost:3001/services
 ```
 
+### Exemplo de body POST ```/services/products```
+```json
+{
+  "name": "Livro",
+  "price": 20
+}
+```
+
 ### Para mais instruções
 - [API Rest](https://github.com/ThyagOliveira/nestjs-challenge)
 - [Cart](https://github.com/ThyagOliveira/cart-service-challenge)
